@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Form Project</title>
+  </head>
+  <body>
+    <main>
+        <h1>Tip Calculator</h1>
+      <form action="" id="form">
+        <div>
+          <label for="bill">How much was your bill?</label>
+          <input
+            type="number"
+            name="bill"
+            id="bill"
+            step="0.010"
+            min="0"
+            max="1000"
+          />
+        </div>
+
+        <div>
+          <label for="tip">Select the tip value!</label>
+          <select name="tip" id="tip">
+            <option value="10">10%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+          </select>
+        </div>
+
+        <button id="calculate">Calculate</button>
+      </form>
+
+
+      <section id="results">
+        <div>
+          <label for="billResult">Bill</label>
+          <input type="text" value="" id="billResult" disabled />
+        </div>
+
+        <div>
+          <label for="tipResult">Tip</label>
+          <input type="text" value="" id="tipResult" disabled />
+        </div>
+
+        <div>
+          <label for="calculateResult">Result</label>
+          <input type="text" value="" id="calculateResult" disabled />
+        </div>
+
+        <button id="another">Another Bill Calculation</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
